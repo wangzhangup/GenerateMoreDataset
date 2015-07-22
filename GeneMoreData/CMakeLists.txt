@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project(RemoveDistortion)
+find_package( OpenCV REQUIRED)
+add_executable(RemoveDistortion removedistortion.cpp)
+target_link_libraries(RemoveDistortion ${OpenCV_LIBS})
